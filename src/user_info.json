@@ -1,0 +1,12 @@
+{
+    "user_info":{
+        "fname": "Dylan",
+        "lname": "Loader",
+        "resume_path": "/Users/dloader/Documents/GitHub/lazy-cv/references/Dylan-Loader-Resume-October-2023.pdf",
+        "signature_path": null,
+        "manager_name": null
+        },
+    "model_info":{
+        "emb_model":"sentence-transformers/all-MiniLM-L6-v2"
+    }
+}
