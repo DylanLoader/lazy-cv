@@ -3,10 +3,11 @@
         "fname": "Dylan",
         "lname": "Loader",
         "resume_path": "/Users/dloader/Documents/GitHub/lazy-cv/references/Dylan-Loader-Resume-October-2023.pdf",
-        "signature_path": null,
-        "manager_name": null
+        "signature_path": null
         },
     "model_info":{
+        "LLM_model_PATH": "/Users/dloader/Documents/LLM-models/TheBloke/mistral-11b-omnimix-bf16.Q5_K_M.gguf/mistral-11b-omnimix-bf16.Q5_K_M.gguf",
+        "LLM_small_model_PATH": "/Users/dloader/Documents/LLM-models/TheBloke/dolphin-2.1-mistral-7B-GGUF/dolphin-2.1-mistral-7b.Q4_K_M.gguf",
         "emb_model":"sentence-transformers/all-MiniLM-L6-v2"
     }
 }

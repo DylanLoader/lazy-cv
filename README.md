@@ -26,4 +26,6 @@ Assuming you're running the same model as the repo (Mistral-11B-OmniMix) you sho
 
 ### Setup Section 1 <a name="setupsub1"></a>
 
+for Macbook Metal M1/M2 GPU Support: https://python.langchain.com/docs/integrations/llms/llamacpp
+
 ## Output <a name="output"></a>
