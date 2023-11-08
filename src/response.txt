@@ -1,11 +1,11 @@
 
 
-Dear Hiring Manager,
+Dear [Recruiter/Hiring Manager],
 
-I am delighted to submit my application for the Shift Lead position at McDonald's. Having closely followed your brand's exceptional commitment to providing quality food and outstanding customer service, I believe my skills, experience, and passion for delivering a memorable guest experience align perfectly with this exciting opportunity.
+I am excited to apply for the Team Lead position at McDonald's and believe my experience in customer service, data analysis, and team leadership would be a perfect fit for this role. As an enthusiastic and adaptable individual with a passion for delivering exceptional guest experiences, I am confident that I can contribute significantly to your team's success.
 
-My previous experience as a Data Science Consultant (Internship) at ATB Financial has equipped me with excellent analytical skills in data analysis and problem-solving. During my internship, I worked on a team that developed and implemented machine learning algorithms to detect fraudulent transactions, ensuring the security and protection of clients' financial information. This experience has not only taught me the importance of attention to detail but also the significance of working collaboratively as part of a team.
+As a former Data Science Consultant at ATB Financial and Associate Machine Learning Developer at AltaML, I have gained extensive experience in data analysis, modeling, and problem-solving. In these roles, I developed expertise in SQL querying, feature engineering, and model evaluation to improve fraud detection and customer segmentation processes. Additionally, my experience as a Graduate Teaching Assistant at the University of Calgary has equipped me with excellent communication skills and the ability to explain complex concepts in simple terms.
 
-Similarly, my role as an Associate Machine Learning Developer at AltaML and ATB Financial allowed me to further hone my skills in data analysis and experimentation. I worked closely with senior managers to identify areas for improvement and developed scalable solutions using machine learning models. This experience has provided me with the ability to think outside the box and solve complex problems.
+In my previous roles, I have demonstrated strong leadership qualities by mentoring and guiding team members, managing projects, and collaborating effectively with cross-functional teams. My ability to work well under pressure and adapt quickly to changing situations would be valuable assets to your team.
 
-My time as a Data Science Development Intern at Benevity
+As a customer service professional, I
