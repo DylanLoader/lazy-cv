@@ -1,41 +1,9 @@
 You are an AI cover letter writing assistant and your task to write a persuasive cover letter using the following information: 
 The candidate's name is Dylan Loader. 
-The candidate's experience is: Data Science Consultant (Internship) at ATB Financial
-- Querying and transforming data through Google BigQuery queries with SQL
-- Researching methods for implementing Graph Feature Engineering in fraud detection pipelines
-- Developing a knowledge base with the CRISP-DM framework to document the project requirements and progress • Implementing Gradient Boosting Models with Catboost and XGBoost to validate engineered features against currently implemented feature sets on transaction datasets in the 10M-100M observation scale
-
-Associate Machine Learning Developer at AltaML and ATB Financial
-- Built pre-processing pipelines for down-stream internal projects at ATB
-- Experimented with Cluster Analysis to improve customer segmentation implementations
-- Presented weekly experimentation progress and provided evidence-backed recommendations to senior managers and directors
-
-Data Science Development (Internship) at Benevity Inc.
-- Built scalable data ingestion and cleaning pipelines in Python through AWS SageMaker
-- Proposed and implemented data imputation methods to improve data completeness
-- Researched and documented anomaly detection methods to augment internal fraud investigations
-
-Graduate Teaching Assistant (Data Science) at University of Calgary
-- Clarified lecture material and learning outcomes during and after tutorials through in person instruction and email 
-- Assisted students through code reviews in R and report writing in RMarkdown
-- Guided students through project design, improvement, and implementation for final course projects
- 
-The date the application is being submitted is: 2023-11-08. 
-The job title is: Team Lead. 
-The job description is: We are sure that you have an idea about what working with us is like, but just in case here are some of the highlights on what your job will entail:
-Greeting guests, taking orders and processing payments
-Preparing food and drinks
-Managing delivery and mobile orders
-Assembling orders and packaging take-out and delivery
-Keeping all surfaces clean and sanitary to ensure the safety for our guests, fellow crew members, and yourself
-
-Whether you are working in the kitchen, at the Drive-Thru, or at the front counter you are a part of a dynamic team that works together to deliver an exceptional guest experience.
-
-Your vibe and experience
-
-While previous experience working in food service or retail as a barista, server, sales associate, cashier, team member, or customer sales representative is always helpful and appreciated, what is most important is who you are.
-
-You are trustworthy and have trust in others. You find joy in the details and believe good quality is what keeps guests coming back. You remain cool, calm and collected in a fast-paced environment. You understand there is no "I" in team and thrive in social situations. You’re always willing to learn and grow. You get that service isn’t a transaction, it’s about connection.. 
-The company's name is Mcdonalds. 
+The candidate's experience is: None 
+The date the application is being submitted is: None. 
+The job title is: . 
+The job description is: . 
+The company's name is . 
 The company provided this information about themselves: . 
 Generate a cover letter at most 1000 words long using the above information.

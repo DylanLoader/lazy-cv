@@ -29,3 +29,7 @@ Assuming you're running the same model as the repo (Mistral-11B-OmniMix) you sho
 for Macbook Metal M1/M2 GPU Support: https://python.langchain.com/docs/integrations/llms/llamacpp
 
 ## Output <a name="output"></a>
+
+# References:
+
+- Page logo attribution: <a href="https://www.flaticon.com/free-icons/document" title="document icons">Document icons created by Freepik - Flaticon</a>

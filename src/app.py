@@ -9,17 +9,23 @@ import datetime
 # LLM imports
 from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS
+# from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.llms import LlamaCpp
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
-from langchain.chains import RetrievalQA
+# from langchain.chains import RetrievalQA
+import langchain
+# import langchain
 
 #%%
 os.getcwd()
 
 #%%
+# Set page configuration
+st.set_page_config(
+    layout="wide",
+    page_title="LazyCV", page_icon="../readme-pictures/page-icon.png")
 # Streamlit header 
 st.title("Lazy CV LLM Cover Letter Generator")
 with st.form("my_form"):
@@ -39,10 +45,12 @@ with st.form("my_form"):
     job_title = st.text_input("Job Title", placeholder="Required")
     company_description = st.text_area("Company Description or Mission Statement", placeholder="Optional")
     job_description = st.text_area("Job Description", placeholder="Required")
-    submit_button = st.form_submit_button("Generate Cover Letter")   
+    llm_temperature = st.slider("LLM Temperature", min_value=0.0, max_value=1.0, value=0.3,step=0.1)
+    submit_button = st.form_submit_button("Generate Cover Letter")
     
 with st.spinner(text="Generating Cover Letter"):
     if submit_button:
+        start_time = datetime.datetime.now()
         # save submitted user data. 
         # if tog: 
         #     # Save the user data to the json
@@ -82,11 +90,11 @@ with st.spinner(text="Generating Cover Letter"):
         llm = LlamaCpp(
             streaming=False,
             model_path=model_path,
-            temperature=0.3,
+            temperature=llm_temperature,
             top_p=1,
             n_batch=128,
-            n_ctx=2000,
-            verbose=True
+            n_ctx=8000,
+            max_tokens=8000
             )
         # Write prompt to file
         with open('prompt.txt', 'w', encoding='utf-8') as f:
@@ -95,20 +103,24 @@ with st.spinner(text="Generating Cover Letter"):
             input_variables=["prompt"],
             template="[INST] {prompt}[/INST]"
             )
-        from langchain.chains import LLMChain
-        import langchain
         # langchain.debug = True
         llm = LLMChain(
             llm=llm,
-            prompt=prompt_template
+            prompt=prompt_template,
             )
-        llm_response = llm.run({"prompt":prompt, "max_tokens":200})
+        # st.write(llm)
+        llm_response = llm.run({"prompt":prompt})
+        # st.write(llm_response)
         # llm_reply = llm_response({"prompt":prompt})
         with open('response.txt', 'w', encoding='utf-8') as f:
             f.write(llm_response)
+        end_time = datetime.datetime.now()
+        run_time = end_time - start_time
+        
         st.subheader("Cover Letter:")
         # st.write(qa_response)
         st.write(llm_response)
+        st.write(f"Total generation time: {run_time}")
         # TODO Add signature
         # if signature_path != None:
             # current_signature = open(signature_path, "r").read()
@@ -117,5 +129,5 @@ with st.spinner(text="Generating Cover Letter"):
         # print(prompt)
         # TODO add dump to file button, so we can save the cover letter to a file to be used as 'good' examples for rag
 
-        st.success('Done!')
+        # st.success('Done!')
 # %%
